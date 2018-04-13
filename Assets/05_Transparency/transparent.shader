@@ -8,6 +8,7 @@
 		Tags{ "RenderType"="Transparent" "Queue"="Transparent"}
 
 		Blend SrcAlpha OneMinusSrcAlpha
+		ZWrite off
 
 		Pass{
 			CGPROGRAM
