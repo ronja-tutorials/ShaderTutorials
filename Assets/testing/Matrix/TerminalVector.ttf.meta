@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ea03ed2ebd92e3849a3f7360f99d8b66
+timeCreated: 1521110861
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TerminalVector
+  fontNames:
+  - TerminalVector
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
