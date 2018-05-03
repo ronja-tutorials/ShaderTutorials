@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: textures
-  m_Shader: {fileID: 4800000, guid: 09773cf06dac7d545a99581bfb1b6720, type: 3}
+  m_Name: surface
+  m_Shader: {fileID: 4800000, guid: ad5a4f2b4ed7f644c80ebce40e80ccf6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0016014c73360794aaca717a4b234790, type: 3}
+        m_Texture: {fileID: 2800000, guid: 23dc4d4e95546b244854b9f4731755b7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,11 +66,13 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8304497, g: 0.2794118, b: 1, a: 1}
+    - _Color: {r: 0.7924528, g: 0.5719117, b: 0.7420267, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

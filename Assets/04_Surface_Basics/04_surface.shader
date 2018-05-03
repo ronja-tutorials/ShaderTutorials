@@ -28,8 +28,6 @@
 		void surf (Input i, inout SurfaceOutputStandard o) {
 			fixed4 col = tex2D(_MainTex, i.uv_MainTex);
 			col *= _Color;
-			//changed this to only use the rgb values because this color doesn't take a alpha value 
-			//(the alpha is cut automatically, but I think it's better to do it explicitly)
 			o.Albedo = col.rgb;
 			o.Metallic = _Metallic;
 			o.Smoothness = _Smoothness;
