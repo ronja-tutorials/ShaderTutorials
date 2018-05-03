@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/08_Color_Blending/Plain"{
+﻿Shader "Tutorial/08_Color_Blending/Texture"{
 	//show values to edit in inspector
 	Properties{
 		_MainTex ("Texture", 2D) = "white" {} //the base texture
