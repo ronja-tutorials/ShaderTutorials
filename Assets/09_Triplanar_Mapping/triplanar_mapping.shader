@@ -44,8 +44,8 @@
 				float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
 				o.worldPos = worldPos.xyz;
 				//calculate world normal
-				float3 worldNormal = mul((float3x3)unity_ObjectToWorld, v.normal);
-				o.normal = worldNormal;
+				float3 worldNormal = mul(v.normal, (float3x3)unity_WorldToObject);
+				o.normal = normalize(worldNormal);
 				return o;
 			}
 
