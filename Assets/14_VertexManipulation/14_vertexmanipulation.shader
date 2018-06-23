@@ -17,7 +17,8 @@
 
 		CGPROGRAM
 
-		//the shader is a surface shader, meaning that it will be extended by unity in the background to have fancy lighting and other features
+		//the shader is a surface shader, meaning that it will be extended by unity in the background 
+		//to have fancy lighting and other features
 		//our surface shader function is called surf and we use our custom lighting model
 		//fullforwardshadows makes sure unity adds the shadow passes the shader might need
 		//vertex:vert makes the shader use vert as a vertex shader function
@@ -75,3 +76,4 @@
 	}
 	FallBack "Standard"
 }
+
