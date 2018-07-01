@@ -10,6 +10,7 @@
 	SubShader{
 		//the material is completely non-transparent and is rendered at the same time as the other opaque geometry
 		Tags{ "RenderType"="Opaque" "Queue"="Geometry"}
+		
 
 		Pass{
 			CGPROGRAM
@@ -59,4 +60,5 @@
 			ENDCG
 		}
 	}
+	FallBack "Standard" //fallback adds a shadow pass so we get shadows on other objects
 }
