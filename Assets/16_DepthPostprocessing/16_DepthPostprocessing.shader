@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/16_Depthbuffer_Postprocessing"{
+﻿Shader "Tutorial/16_Depth_Postprocessing"{
 	//show values to edit in inspector
 	Properties{
 		[HideInInspector]_MainTex ("Texture", 2D) = "white" {}

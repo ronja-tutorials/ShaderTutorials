@@ -4,7 +4,7 @@
 public class DepthPostprocessing : MonoBehaviour {
 	//material that's applied when doing postprocessing
 	[SerializeField]
-	private Material postprocesssMaterial;
+	private Material postprocessMaterial;
 	[SerializeField]
 	private float waveSpeed;
 	[SerializeField]
@@ -30,8 +30,8 @@ public class DepthPostprocessing : MonoBehaviour {
 	//method which is automatically called by unity after the camera is done rendering
 	private void OnRenderImage(RenderTexture source, RenderTexture destination){
 		//sync the distance from the script to the shader
-		postprocesssMaterial.SetFloat("_WaveDistance", waveDistance);
+		postprocessMaterial.SetFloat("_WaveDistance", waveDistance);
 		//draws the pixels from the source texture to the destination texture
-		Graphics.Blit(source, destination, postprocesssMaterial);
+		Graphics.Blit(source, destination, postprocessMaterial);
 	}
 }
