@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/19_InvertedHull/Unlit"{
+﻿Shader "Tutorial/020_InvertedHull/Unlit"{
 	//show values to edit in inspector
 	Properties{
 		_OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)

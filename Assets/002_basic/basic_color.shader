@@ -1,11 +1,8 @@
 ﻿Shader "Tutorial/002_Basic"{
 	SubShader{
-		Tags{
-				"RenderType"="Opaque" 
-				"Queue"="Geometry"
-			}
 		Pass{
-			
+			//the material is completely non-transparent and is rendered at the same time as the other opaque geometry
+			Tags{"RenderType"="Opaque" "Queue"="Geometry"}
 
 			CGPROGRAM
 			#include "UnityCG.cginc"
