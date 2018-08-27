@@ -1,4 +1,4 @@
-Shader "PlaneIntersection"{
+Shader "Unlit/PlaneIntersection"{
 	//show values to edit in inspector
 	Properties{
 		[HDR]_Color ("Color", Color) = (0, 0, 0, 1)

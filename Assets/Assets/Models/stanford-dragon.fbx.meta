@@ -20,12 +20,16 @@ ModelImporter:
     2000000: Camera_Perspective2
     2100000: ffffff
     2100002: Material
+    2100004: Material.001
     2300000: default
     2300002: Plane
+    2300004: //RootNode
     3300000: default
     3300002: Plane
+    3300004: //RootNode
     4300000: Plane
     4300002: default
+    4300004: dragon
     10800000: Sky Light
     10800002: Sun Light
   externalObjects: {}
