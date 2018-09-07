@@ -49,7 +49,7 @@
 		}
 
 		void surf (Input i, inout SurfaceOutputStandard o) {
-			float2 value = i.worldPos.xy / _CellSize;
+			float2 value = i.worldPos.xz / _CellSize;
 			float noise = ValueNoise2d(value);
 
 			o.Albedo = noise;

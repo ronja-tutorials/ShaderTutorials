@@ -42,7 +42,7 @@
 
 			float dist = abs(noise - i.worldPos.y);
 			float pixelHeight = fwidth(i.worldPos.y);
-			float lineIntensity = smoothstep(0, pixelHeight, dist);
+			float lineIntensity = smoothstep(pixelHeight, 2*pixelHeight, dist);
 			o.Albedo = lineIntensity;
 		}
 		ENDCG
