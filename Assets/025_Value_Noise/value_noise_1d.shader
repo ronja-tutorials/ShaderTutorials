@@ -32,13 +32,17 @@
 			return lerp(easeInValue, easeOutValue, interpolator);
 		}
 
-		void surf (Input i, inout SurfaceOutputStandard o) {
-			float value = i.worldPos.x / _CellSize;
+		float valueNoise(float value){
 			float previousCellNoise = rand1dTo1d(floor(value));
 			float nextCellNoise = rand1dTo1d(ceil(value));
 			float interpolator = frac(value);
 			interpolator = easeInOut(interpolator);
-			float noise = lerp(previousCellNoise, nextCellNoise, interpolator);
+			return lerp(previousCellNoise, nextCellNoise, interpolator);
+		}
+
+		void surf (Input i, inout SurfaceOutputStandard o) {
+			float value = i.worldPos.x / _CellSize;
+			float noise = valueNoise(value);
 
 			float dist = abs(noise - i.worldPos.y);
 			float pixelHeight = fwidth(i.worldPos.y);
