@@ -47,7 +47,7 @@
 
 		void surf (Input i, inout SurfaceOutputStandard o) {
 			float value = i.worldPos.x / _CellSize;
-			float noise = gradientNoise(value);
+			float noise = gradientNoise(value) + 0.5;
 			
 			float dist = abs(noise - i.worldPos.y);
 			float pixelHeight = fwidth(i.worldPos.y);
