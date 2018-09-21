@@ -13,7 +13,6 @@
 		#include "Random.cginc"
 
 		float _CellSize;
-		float _Jitter;
 
 		struct Input {
 			float3 worldPos;
