@@ -1,6 +1,6 @@
 ﻿Shader "Tutorial/026_perlin_noise/2d" {
 	Properties {
-		_CellSize ("Cell Size", Range(0, 1)) = 1
+		_CellSize ("Cell Size", Range(0, 2)) = 1
 	}
 	SubShader {
 		Tags{ "RenderType"="Opaque" "Queue"="Geometry"}
