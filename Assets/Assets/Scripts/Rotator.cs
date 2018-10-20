@@ -6,6 +6,6 @@ public class Rotator : MonoBehaviour {
 	[Range(0, 5)]public float rotationsPerSecond = 1;
 	
 	void Update () {
-		transform.localEulerAngles = Time.time * rotationsPerSecond * 360 * Vector3.up;
+		transform.Rotate(Vector3.up, Time.deltaTime * rotationsPerSecond * 360, Space.World);
 	}
 }
