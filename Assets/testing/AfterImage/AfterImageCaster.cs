@@ -6,12 +6,13 @@ using UnityEngine;
 public class AfterImageCaster : MonoBehaviour {
 
 	public static List<AfterImageCaster> casters = new List<AfterImageCaster>();
-	public Mesh mesh;
+	[HideInInspector]public Renderer Renderer;
+    public Color CasterColor = Color.yellow;
 
 
 	void OnEnable(){
 		casters.Add(this);
-		mesh = GetComponent<MeshFilter>().sharedMesh;
+		Renderer = GetComponent<Renderer>();
 	}
 	void OnDisable(){
 		casters.Remove(this);
