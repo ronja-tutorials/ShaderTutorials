@@ -40,7 +40,7 @@
 			//intensity we calculated previously, diffuse color, light falloff and shadowcasting, color of the light
 			col.rgb = lightIntensity * s.Albedo * atten * _LightColor0.rgb;
 			//in case we want to make the shader transparent in the future - irrelevant right now
-			col.a = s.Alpha; 
+			col.a = s.Alpha;
 
 			return col;
 		}
@@ -57,7 +57,7 @@
 			col *= _Color;
 			o.Albedo = col.rgb;
 
-			//o.Emission = _Emission;
+			o.Emission = _Emission;
 		}
 		ENDCG
 	}
