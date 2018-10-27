@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 4ac6580cb34219846b8bad9566f6a334
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CybergGirl
+    100004: Glass
+    100006: Rig
+    100008: RigArmLeft1
+    100010: RigArmLeft2
+    100012: RigArmLeft3
+    100014: RigArmLeftCollarbone
+    100016: RigArmLeftFing11
+    100018: RigArmLeftFing12
+    100020: RigArmLeftFing13
+    100022: RigArmLeftFing21
+    100024: RigArmLeftFing22
+    100026: RigArmLeftFing23
+    100028: RigArmLeftFing31
+    100030: RigArmLeftFing32
+    100032: RigArmLeftFing33
+    100034: RigArmLeftFing41
+    100036: RigArmLeftFing42
+    100038: RigArmLeftFing43
+    100040: RigArmRight1
+    100042: RigArmRight2
+    100044: RigArmRight3
+    100046: RigArmRightCollarbone
+    100048: RigArmRightFing11
+    100050: RigArmRightFing12
+    100052: RigArmRightFing13
+    100054: RigArmRightFing21
+    100056: RigArmRightFing22
+    100058: RigArmRightFing23
+    100060: RigArmRightFing31
+    100062: RigArmRightFing32
+    100064: RigArmRightFing33
+    100066: RigArmRightFing41
+    100068: RigArmRightFing42
+    100070: RigArmRightFing43
+    100072: RigAss
+    100074: RigHead
+    100076: RigLeftPistol
+    100078: RigLegLeft1
+    100080: RigLegLeft2
+    100082: RigLegLeft3
+    100084: RigLegRight1
+    100086: RigLegRight2
+    100088: RigLegRight3
+    100090: RigNeck
+    100092: RigPistolRight
+    100094: RigSpine1
+    100096: RigSpine2
+    100098: RigSpine3
+    100100: CyborgGirl
+    100102: RigPistolLeft
+    400000: //RootNode
+    400002: CybergGirl
+    400004: Glass
+    400006: Rig
+    400008: RigArmLeft1
+    400010: RigArmLeft2
+    400012: RigArmLeft3
+    400014: RigArmLeftCollarbone
+    400016: RigArmLeftFing11
+    400018: RigArmLeftFing12
+    400020: RigArmLeftFing13
+    400022: RigArmLeftFing21
+    400024: RigArmLeftFing22
+    400026: RigArmLeftFing23
+    400028: RigArmLeftFing31
+    400030: RigArmLeftFing32
+    400032: RigArmLeftFing33
+    400034: RigArmLeftFing41
+    400036: RigArmLeftFing42
+    400038: RigArmLeftFing43
+    400040: RigArmRight1
+    400042: RigArmRight2
+    400044: RigArmRight3
+    400046: RigArmRightCollarbone
+    400048: RigArmRightFing11
+    400050: RigArmRightFing12
+    400052: RigArmRightFing13
+    400054: RigArmRightFing21
+    400056: RigArmRightFing22
+    400058: RigArmRightFing23
+    400060: RigArmRightFing31
+    400062: RigArmRightFing32
+    400064: RigArmRightFing33
+    400066: RigArmRightFing41
+    400068: RigArmRightFing42
+    400070: RigArmRightFing43
+    400072: RigAss
+    400074: RigHead
+    400076: RigLeftPistol
+    400078: RigLegLeft1
+    400080: RigLegLeft2
+    400082: RigLegLeft3
+    400084: RigLegRight1
+    400086: RigLegRight2
+    400088: RigLegRight3
+    400090: RigNeck
+    400092: RigPistolRight
+    400094: RigSpine1
+    400096: RigSpine2
+    400098: RigSpine3
+    400100: CyborgGirl
+    400102: RigPistolLeft
+    4300000: CybergGirl
+    4300002: Glass
+    4300004: CyborgGirl
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: CybergGirl
+    13700002: Glass
+    13700004: CyborgGirl
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 1
+  importAnimation: 0
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: RigAss
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b6c33e1d6632025468fb37a04e312606,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
