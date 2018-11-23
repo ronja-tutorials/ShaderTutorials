@@ -47,8 +47,6 @@
                 float2 flip = abs(fmod(cell, 2));
                 position = lerp(position, period - position, flip);
 
-                const float PI = 3.14159;
-
                 float2 squarePosition = position;
                 squarePosition = translate(squarePosition, float2(2, 2));
                 squarePosition = rotate(squarePosition, .125);
