@@ -117,6 +117,28 @@ float2 cells(inout float2 position, float2 period){
     return cellIndex;
 }
 
+float radial_cells(inout float2 position, float cells, bool mirrorEverySecondCell = false){
+    const float PI = 3.14159;
+
+    float cellSize = PI * 2 / cells;
+    float2 radialPosition = float2(atan2(position.x, position.y), length(position));
+    
+    float cellIndex = fmod(floor(radialPosition.x / cellSize) + cells, cells);
+
+    radialPosition.x = fmod(fmod(radialPosition.x, cellSize) + cellSize, cellSize);
+
+    if(mirrorEverySecondCell){
+        float flip = fmod(cellIndex, 2);
+        flip = abs(flip-1);
+        radialPosition.x = lerp(cellSize - radialPosition.x, radialPosition.x, flip);
+    }
+
+    sincos(radialPosition.x, position.x, position.y);
+    position = position * radialPosition.y;
+
+    return cellIndex;
+}
+
 void wobble(inout float2 position, float2 frequency, float2 amount){
     float2 wobble = sin(position.yx * frequency) * amount;
     position = position + wobble;
