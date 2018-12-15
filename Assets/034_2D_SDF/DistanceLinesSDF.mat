@@ -5,8 +5,9 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: CutoffSDF 1
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DistanceLinesSDF
   m_Shader: {fileID: 4800000, guid: ccca93e21b05b8f4498de698788af5a4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

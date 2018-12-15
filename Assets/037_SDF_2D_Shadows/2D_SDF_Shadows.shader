@@ -51,7 +51,7 @@
 
             #define STARTDISTANCE 0.00001
             #define MINSTEPDIST 0.02
-            #define SAMPLES 32
+            #define SAMPLES 64
 
             float traceShadows(float2 position, float2 lightPosition, float hardness){
                 float2 direction = normalize(lightPosition - position);

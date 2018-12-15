@@ -5,8 +5,9 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: CyberGirl
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glasses
   m_Shader: {fileID: 4800000, guid: f861b0eb2ee247d4ebc14a9f8fbf3227, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -67,7 +68,9 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
+    - _SpecularFalloff: 1
     - _SpecularHighlights: 1
+    - _SpecularSize: 0.1
     - _SrcBlend: 1
     - _StepAmount: 3
     - _StepWidth: 0.398
