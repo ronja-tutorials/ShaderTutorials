@@ -10,7 +10,7 @@ glsl vec4 circles(vec2 pos) {
     vec2 localSpace = mod(pos, vec2(1.0/circleAmount)) * circleAmount;
     //return vec4(localSpace, 0, 1);
     float circleDistance = length(localSpace - vec2(0.5));
-    return vec4(vec3(circleDistance * sqrt(2)), 1);
+    return vec4(vec3(1 - circleDistance * sqrt(2)), 1);
 }
 
 image Circles = glsl(multisample<circles, samples>, dimensions);
