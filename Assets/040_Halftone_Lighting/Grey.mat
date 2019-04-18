@@ -85,7 +85,7 @@ Material:
     - _Parallax: 0.02
     - _RemapInputMax: 1
     - _RemapInputMin: 0
-    - _RemapOutputMax: 0.837
+    - _RemapOutputMax: 0.715
     - _RemapOutputMin: 0
     - _ShadowCoreSize: 0.5
     - _ShadowCoreSoftness: 0.2

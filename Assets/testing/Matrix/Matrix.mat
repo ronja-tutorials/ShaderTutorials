@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Matrix
   m_Shader: {fileID: 4800000, guid: d1055b356215f0f48a5856cd10a2e806, type: 3}
   m_ShaderKeywords: 
@@ -56,15 +57,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.01
+    - _Cutoff: 0.107
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FallSpeed: 5.3
-    - _Freq: 0.018
+    - _FallSpeed: 6.21
+    - _Freq: 0.0578
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LetterChange: 0.91
+    - _LetterChange: 0.855
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
