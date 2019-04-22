@@ -1,7 +1,9 @@
-﻿Shader "Tutorial/041_HSV/HueCycle"{
+﻿Shader "Tutorial/041_HSV/Adjust"{
 	//show values to edit in inspector
 	Properties{
-		_CycleSpeed ("Hue Cycle Speed", Range(0, 1)) = 0
+		_HueShift("Hue Shift", Range(-1, 1)) = 0
+        [PowerSlider(10.0)]_SaturationPower("Saturation Adjustment", Range(10.0, 0.1)) = 1
+        [PowerSlider(10.0)]_ValuePower("Value Adjustment", Range(10.0, 0.1)) = 1
 		_MainTex ("Texture", 2D) = "white" {}
 	}
 
@@ -20,8 +22,10 @@
 			#pragma vertex vert
 			#pragma fragment frag
 
-            //Hue cycle speed
-			float _CycleSpeed;
+            //HSV modification variables
+			float _HueShift;
+            float _SaturationPower;
+            float _ValuePower;
 
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
@@ -51,7 +55,9 @@
 			fixed4 frag(v2f i) : SV_TARGET{
 				float3 col = tex2D(_MainTex, i.uv);
 				float3 hsv = rgb2hsv(col);
-				hsv.x += i.uv.y + _Time.y * _CycleSpeed;
+				hsv.x = hsv.x + _HueShift;
+                hsv.y = pow(hsv.y, _SaturationPower);
+                hsv.z = pow(hsv.z, _ValuePower);
 				col = hsv2rgb(hsv);
 				return float4(col, 1);
 			}

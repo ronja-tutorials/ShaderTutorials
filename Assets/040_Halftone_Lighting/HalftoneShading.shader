@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/40_DitheredLighting" {
+﻿Shader "Tutorial/040_DitheredLighting" {
 	//show values to edit in inspector
 	Properties{
 		_Color("Tint", Color) = (0, 0, 0, 1)

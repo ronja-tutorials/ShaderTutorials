@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HSV_Adjustments
+  m_Name: HSV_Cycle
   m_Shader: {fileID: 4800000, guid: 71a907935ba8dca4aae2989ee23bcaa6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -58,6 +58,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _CycleSpeed: 0.3
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
