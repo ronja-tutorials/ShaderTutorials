@@ -69,8 +69,6 @@
 			//get halftone comparison value
             float halftoneValue = tex2D(_HalftonePattern, s.ScreenPos).r;
 
-			//return halftoneValue;
-
             //make lightness binary between fully lit and fully shadow based on halftone pattern (with a bit of antialiasing between)
             halftoneValue = map(halftoneValue, _RemapInputMin, _RemapInputMax, _RemapOutputMin, _RemapOutputMax);
             float halftoneChange = fwidth(halftoneValue) * 0.5;
