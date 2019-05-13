@@ -2,6 +2,7 @@
 	//show values to edit in inspector
 	Properties{
 		_MainTex ("Texture", 2D) = "white" {}
+		_Color ("Tint", Color) = (1,1,1,1)
         _DitherPattern ("Dithering Pattern", 2D) = "white" {}
 		_MinDistance ("Minimum Fade Distance", Float) = 0
 		_MaxDistance ("Maximum Fade Distance", Float) = 1
@@ -15,12 +16,12 @@
 
 		//the shader is a surface shader, meaning that it will be extended by unity in the background to have fancy lighting and other features
 		//our surface shader function is called surf and we use our custom lighting model
-		//fullforwardshadows makes sure unity adds the shadow passes the shader might need
-		#pragma surface surf Standard fullforwardshadows
+		#pragma surface surf Standard
 		#pragma target 3.0
 
-		//texture and transforms of the texture
+		//texture and tint of color
 		sampler2D _MainTex;
+		float4 _Color;
 
 		//The dithering pattern
 		sampler2D _DitherPattern;
@@ -40,7 +41,7 @@
 		void surf (Input i, inout SurfaceOutputStandard o) {
 			//read texture and write it to diffuse color
 			float3 texColor = tex2D(_MainTex, i.uv_MainTex);
-			o.Albedo = texColor.rgb;
+			o.Albedo = texColor.rgb * _Color;
 
 			//value from the dither pattern
 			float2 screenPos = i.screenPos.xy / i.screenPos.w;
@@ -56,5 +57,4 @@
 		}
 		ENDCG
 	}
-	FallBack "Standard"
 }
