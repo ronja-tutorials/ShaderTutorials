@@ -7,73 +7,54 @@
 		_MaxDistance ("Maximum Fade Distance", Float) = 1
 	}
 
-	SubShader{
+	SubShader {
 		//the material is completely non-transparent and is rendered at the same time as the other opaque geometry
 		Tags{ "RenderType"="Opaque" "Queue"="Geometry"}
 
-		Pass{
-			CGPROGRAM
+		CGPROGRAM
 
-			//include useful shader functions
-			#include "UnityCG.cginc"
+		//the shader is a surface shader, meaning that it will be extended by unity in the background to have fancy lighting and other features
+		//our surface shader function is called surf and we use our custom lighting model
+		//fullforwardshadows makes sure unity adds the shadow passes the shader might need
+		#pragma surface surf Standard fullforwardshadows
+		#pragma target 3.0
 
-			//define vertex and fragment shader
-			#pragma vertex vert
-			#pragma fragment frag
+		//texture and transforms of the texture
+		sampler2D _MainTex;
 
-			//texture and transforms of the texture
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
+		//The dithering pattern
+		sampler2D _DitherPattern;
+		float4 _DitherPattern_TexelSize;
 
-            //The dithering pattern
-            sampler2D _DitherPattern;
-            float4 _DitherPattern_TexelSize;
+		//remapping of distance
+		float _MinDistance;
+		float _MaxDistance;
 
-			//remapping of distance
-			float _MinDistance;
-			float _MaxDistance;
+		//input struct which is automatically filled by unity
+		struct Input {
+			float2 uv_MainTex;
+			float4 screenPos;
+		};
 
-			//the object data that's put into the vertex shader
-			struct appdata{
-				float4 vertex : POSITION;
-				float2 uv : TEXCOORD0;
-			};
+		//the surface shader function which sets parameters the lighting function then uses
+		void surf (Input i, inout SurfaceOutputStandard o) {
+			//read texture and write it to diffuse color
+			float3 texColor = tex2D(_MainTex, i.uv_MainTex);
+			o.Albedo = texColor.rgb;
 
-			//the data that's used to generate fragments and can be read by the fragment shader
-			struct v2f{
-				float4 position : SV_POSITION;
-				float2 uv : TEXCOORD0;
-                float4 screenPosition : TEXCOORD1;
-			};
+			//value from the dither pattern
+			float2 screenPos = i.screenPos.xy / i.screenPos.w;
+			float2 ditherCoordinate = screenPos * _ScreenParams.xy * _DitherPattern_TexelSize.xy;
+			float ditherValue = tex2D(_DitherPattern, ditherCoordinate).r;
 
-			//the vertex shader
-			v2f vert(appdata v){
-				v2f o;
-				//convert the vertex positions from object space to clip space so they can be rendered
-				o.position = UnityObjectToClipPos(v.vertex);
-				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-                o.screenPosition = ComputeScreenPos(o.position);
-				return o;
-			}
-
-			//the fragment shader
-			fixed4 frag(v2f i) : SV_TARGET{
-				float distance = i.screenPosition.w;
-				distance = distance / (_MaxDistance - _MinDistance) - _MinDistance;
-
-                float2 screenPos = i.screenPosition.xy / i.screenPosition.w;
-                float2 ditherCoordinate = screenPos * _ScreenParams.xy * _DitherPattern_TexelSize.xy;
-				float ditherValue = tex2D(_DitherPattern, ditherCoordinate).r;
-
-				clip(distance - ditherValue);
-
-                float4 col = tex2D(_MainTex, i.uv);
-				return col;
-			}
-
-			ENDCG
+			//get relative distance from the camera
+			float relDistance = i.screenPos.w;
+			relDistance = relDistance - _MinDistance;
+			relDistance = relDistance / (_MaxDistance - _MinDistance);
+			//discard pixels accordingly
+			clip(relDistance - ditherValue);
 		}
+		ENDCG
 	}
-
-    Fallback "Standard"
+	FallBack "Standard"
 }
