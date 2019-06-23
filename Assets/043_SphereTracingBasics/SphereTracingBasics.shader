@@ -45,10 +45,8 @@
 				o.position = UnityObjectToClipPos(v.vertex);
                 //save local position for origin
                 o.localPosition = v.vertex;
-                //extract object position out of transform matrix
-                float4 objectPosition = unity_ObjectToWorld._m03_m13_m23_m33;
                 //get camera position in local space
-                float4 objectSpaceCameraPos = mul(unity_WorldToObject, _WorldSpaceCameraPos - objectPosition);
+                float4 objectSpaceCameraPos = mul(unity_WorldToObject, float4(_WorldSpaceCameraPos, 1));
                 //get local view vector
                 o.viewDirection = v.vertex - objectSpaceCameraPos;
 				return o;
