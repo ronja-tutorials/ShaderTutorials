@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/043_SphereTracingBasics"{
+﻿Shader "Tutorial/044_SphereTracingShading"{
 	//show values to edit in inspector
 	Properties{
 		_Color ("Color", Color) = (0, 0, 0, 1)
@@ -13,19 +13,23 @@
 
 			CGPROGRAM
 			#include "UnityCG.cginc"
+            #include "Lighting.cginc"
+            #include "AutoLight.cginc"
 
             
 
 			#pragma vertex vert
 			#pragma fragment frag
 
-            //silouette color
+            //surface color
 			fixed4 _Color;
 
             //maximum amount of steps
             #define MAX_STEPS 10
             //furthest distance that's accepted as inside surface
             #define THICKNESS 0.01
+            //distance from rendered point to sample SDF for normal calculation
+            #define NORMAL_EPSILON 0.01
 
             //input data
             struct appdata{
@@ -57,6 +61,31 @@
                 return length(pos) - 0.5;
             }
 
+            float3 normal(float3 pos){
+                //determine change in signed distance
+                float changeX = scene(pos + float3(NORMAL_EPSILON, 0, 0)) - scene(pos + float3(-NORMAL_EPSILON, 0, 0));
+                float changeY = scene(pos + float3(0, NORMAL_EPSILON, 0)) - scene(pos + float3(0, -NORMAL_EPSILON, 0));
+                float changeZ = scene(pos + float3(0, 0, NORMAL_EPSILON)) - scene(pos + float3(0, 0, -NORMAL_EPSILON));
+                //construct normal vector
+                float3 surfaceNormal = float3(changeX, changeY, changeZ);
+                //return normalized vector
+                return normalize(surfaceNormal);
+            }
+
+            float4 shading(float3 position){
+                //calculate needed surface and light data
+                float3 surfaceNormal = normal(position);
+                float3 lightDirection = _WorldSpaceLightPos0.xyz;
+
+                //calculate simple shading
+                float lightAngle = saturate(dot(surfaceNormal, lightDirection));
+
+                //combine lighting and colors to final color
+                float4 color = _Color * lightAngle * _LightColor0;
+
+                return color;
+            }
+
 			fixed4 frag(v2f i) : SV_TARGET{
                 //ray information
 				float3 pos = i.localPosition;
@@ -71,7 +100,7 @@
                     float distance = scene(samplePoint);
                     //return color if inside shape
                     if(distance < THICKNESS){
-                        return _Color;
+                        return shading(samplePoint);
                     }
                     //go forwards
                     progress = progress + distance;
