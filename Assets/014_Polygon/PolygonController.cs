@@ -5,8 +5,8 @@ using UnityEngine;
 [ExecuteInEditMode]
 [RequireComponent(typeof(Renderer))]
 public class PolygonController : MonoBehaviour {
-	[SerializeField]
-	private Vector2[] corners;
+	
+	public Vector2[] corners;
 
 	private Material _mat;
 

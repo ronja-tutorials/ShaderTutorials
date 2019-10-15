@@ -5,8 +5,8 @@
     }
 
     SubShader{
-        //the material is completely non-transparent and is rendered at the same time as the other opaque geometry
-        Tags{ "RenderType"="Opaque" "Queue"="Geometry" "DisableBatching"="True"}
+        //the material is completely non-transparent and is rendered at the same time as transparent geometry
+        Tags{ "RenderType"="Opaque" "Queue"="Transparent" "DisableBatching"="True"}
 
         Pass{
             ZWrite Off
