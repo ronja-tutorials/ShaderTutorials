@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelUserStore">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
+      <Path>Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2</Path>
+      <Path>Library/PackageCache/com.unity.postprocessing@2.1.4</Path>
+      <Path>Library/PackageCache/com.unity.xr.legacyinputhelpers@2.0.2</Path>
+      <Path>Library/PackageCache/nuget.mono-cecil@0.1.5-preview</Path>
+      <Path>Packages</Path>
+      <Path>ProjectSettings</Path>
+    </explicitIncludes>
+    <explicitExcludes>
+      <Path>.git</Path>
+      <Path>.idea</Path>
+      <Path>.vs</Path>
+      <Path>.vscode</Path>
+      <Path>Library</Path>
+      <Path>Logs</Path>
+      <Path>Temp</Path>
+      <Path>obj</Path>
+    </explicitExcludes>
+  </component>
+</project>

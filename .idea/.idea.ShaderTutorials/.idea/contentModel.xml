@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Ronja2\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Ronja2\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ShaderTutorials.-1481509537.00" t="ExcludeRecursive" />
+    <e p="D:\gamedev\ShaderTutorials" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="002_basic" t="Include">
+          <e p="basic_color.shader" t="Include" />
+        </e>
+        <e p="003_Properties" t="Include">
+          <e p="properties.shader" t="Include" />
+        </e>
+        <e p="004_Textures" t="Include">
+          <e p="textures.shader" t="Include" />
+        </e>
+        <e p="005_Surface_Basics" t="Include">
+          <e p="simple_surface.shader" t="Include" />
+        </e>
+        <e p="006_Transparency" t="Include">
+          <e p="transparent.shader" t="Include" />
+        </e>
+        <e p="007_Sprites" t="Include">
+          <e p="sprite.shader" t="Include" />
+        </e>
+        <e p="008_Planar_Mapping" t="Include">
+          <e p="planar_mapping.shader" t="Include" />
+        </e>
+        <e p="009_Color_Blending" t="Include">
+          <e p="ColorBlending_Plain.shader" t="Include" />
+          <e p="ColorBlending_Texture.shader" t="Include" />
+          <e p="ColorBlending_TextureBasedBlending.shader" t="Include" />
+        </e>
+        <e p="010_Triplanar_Mapping" t="Include">
+          <e p="triplanar_mapping.shader" t="Include" />
+        </e>
+        <e p="011_ChessBoard" t="Include">
+          <e p="Chessboard.shader" t="Include" />
+        </e>
+        <e p="012_Fresnel" t="Include">
+          <e p="Fresnel.shader" t="Include" />
+        </e>
+        <e p="013_CustomSurfaceLighting" t="Include">
+          <e p="CustomLighting.shader" t="Include" />
+        </e>
+        <e p="014_Polygon" t="Include">
+          <e p="Polygon.shader" t="Include" />
+          <e p="PolygonController.cs" t="Include" />
+        </e>
+        <e p="015_VertexManipulation" t="Include">
+          <e p="vertexmanipulation.shader" t="Include" />
+        </e>
+        <e p="016_Postprocessing" t="Include">
+          <e p="Postprocessing.cs" t="Include" />
+          <e p="Postprocessing.shader" t="Include" />
+        </e>
+        <e p="017_DepthPostprocessing" t="Include">
+          <e p="DepthPostprocessing.cs" t="Include" />
+          <e p="DepthPostprocessing.shader" t="Include" />
+        </e>
+        <e p="018_NormalPostprocessing" t="Include">
+          <e p="NormalPostprocessing.cs" t="Include" />
+          <e p="NormalPostprocessing.shader" t="Include" />
+        </e>
+        <e p="019_OutlinesPostprocessed" t="Include">
+          <e p="OutlinesPostprocessed.cs" t="Include" />
+          <e p="OutlinesPostprocessed.shader" t="Include" />
+        </e>
+        <e p="020_Inverted_Hull" t="Include">
+          <e p="SurfaceOutlines.shader" t="Include" />
+          <e p="UnlitOutlines.shader" t="Include" />
+        </e>
+        <e p="021_Clipping_Plane" t="Include">
+          <e p="ClippingPlane.cs" t="Include" />
+          <e p="ClippingPlane.shader" t="Include" />
+        </e>
+        <e p="022_Stencil_Buffer" t="Include">
+          <e p="stencil_read.shader" t="Include" />
+          <e p="stencil_write.shader" t="Include" />
+        </e>
+        <e p="023_PostprocessingBlur" t="Include">
+          <e p="PostprocessingBlur.cs" t="Include" />
+          <e p="PostprocessingBlur.shader" t="Include" />
+        </e>
+        <e p="024_White_Noise" t="Include">
+          <e p="white_noise_cells.shader" t="Include" />
+          <e p="white_noise_random.shader" t="Include" />
+          <e p="WhiteNoise.cginc" t="Include" />
+        </e>
+        <e p="025_Value_Noise" t="Include">
+          <e p="Random.cginc" t="Include" />
+          <e p="value_noise_1d.shader" t="Include" />
+          <e p="value_noise_2d.shader" t="Include" />
+          <e p="value_noise_3d.shader" t="Include" />
+        </e>
+        <e p="026_Perlin_Noise" t="Include">
+          <e p="perlin_noise_1d.shader" t="Include" />
+          <e p="perlin_noise_2d.shader" t="Include" />
+          <e p="perlin_noise_3d.shader" t="Include" />
+          <e p="perlin_noise_special.shader" t="Include" />
+          <e p="Random.cginc" t="Include" />
+        </e>
+        <e p="027_Layered_Noise" t="Include">
+          <e p="layered_noise_special.shader" t="Include" />
+          <e p="layered_perlin_noise_1d.shader" t="Include" />
+          <e p="layered_perlin_noise_2d.shader" t="Include" />
+          <e p="layered_perlin_noise_3d.shader" t="Include" />
+          <e p="Random.cginc" t="Include" />
+        </e>
+        <e p="028_Voronoi_Noise" t="Include">
+          <e p="Random.cginc" t="Include" />
+          <e p="voronoi_noise_2d.shader" t="Include" />
+          <e p="voronoi_noise_3d.shader" t="Include" />
+          <e p="voronoi_noise_scrolling.shader" t="Include" />
+        </e>
+        <e p="029_Tiling_Noise" t="Include">
+          <e p="2d_layered.shader" t="Include" />
+          <e p="3d_voronoi.shader" t="Include" />
+          <e p="Random.cginc" t="Include" />
+        </e>
+        <e p="030_Bake_Material" t="Include">
+          <e p="Editor" t="Include">
+            <e p="BakeTexture3dWindow.cs" t="Include" />
+            <e p="BakeTextureWindow.cs" t="Include" />
+          </e>
+          <e p="Read3dTexture.shader" t="Include" />
+        </e>
+        <e p="031_StepToon" t="Include">
+          <e p="SteppedToonLighting.shader" t="Include" />
+        </e>
+        <e p="032_ImprovedToon" t="Include">
+          <e p="ImprovedToonLighting.shader" t="Include" />
+        </e>
+        <e p="033_River" t="Include">
+          <e p="FlowingRiver.shader" t="Include" />
+        </e>
+        <e p="034_2D_SDF" t="Include">
+          <e p="2D_SDF.cginc" t="Include" />
+          <e p="Circle.shader" t="Include" />
+          <e p="Cutoff.shader" t="Include" />
+          <e p="DistanceLines.shader" t="Include" />
+          <e p="Rectangle.shader" t="Include" />
+        </e>
+        <e p="035_SDF_combining_repeating" t="Include">
+          <e p="Fancy" t="Include">
+            <e p="2D_SDF.cginc" t="Include" />
+            <e p="sdf_border_intersection.shader" t="Include" />
+            <e p="sdf_champfer.shader" t="Include" />
+            <e p="sdf_groove.shader" t="Include" />
+            <e p="sdf_round.shader" t="Include" />
+          </e>
+          <e p="Simple" t="Include">
+            <e p="2D_SDF.cginc" t="Include" />
+            <e p="sdf_interpolate.shader" t="Include" />
+            <e p="sdf_intersect.shader" t="Include" />
+            <e p="sdf_subtract.shader" t="Include" />
+            <e p="sdf_union.shader" t="Include" />
+          </e>
+        </e>
+        <e p="036_SDF_space_manipulation" t="Include">
+          <e p="2D_SDF.cginc" t="Include" />
+          <e p="sdf_cells.shader" t="Include" />
+          <e p="sdf_mirror.shader" t="Include" />
+          <e p="sdf_radial_symmetry.shader" t="Include" />
+          <e p="sdf_wobble.shader" t="Include" />
+        </e>
+        <e p="037_SDF_2D_Shadows" t="Include">
+          <e p="2D_SDF.cginc" t="Include" />
+          <e p="2D_SDF_Shadows.shader" t="Include" />
+        </e>
+        <e p="038_Dissolve" t="Include">
+          <e p="Dissolve.shader" t="Include" />
+        </e>
+        <e p="039_Screenspace_Textures" t="Include">
+          <e p="SurfaceScreenspaceTexture.shader" t="Include" />
+          <e p="UnlitScreenspaceTextures.shader" t="Include" />
+        </e>
+        <e p="040_Halftone_Lighting" t="Include">
+          <e p="HalftoneShading.shader" t="Include" />
+        </e>
+        <e p="041_HSV_Colorspace" t="Include">
+          <e p="HSVAdjust.shader" t="Include" />
+          <e p="HSVLibrary.cginc" t="Include" />
+          <e p="HueCycle.shader" t="Include" />
+          <e p="HueTest.shader" t="Include" />
+        </e>
+        <e p="042_Dithering" t="Include">
+          <e p="BW_Dithering.shader" t="Include" />
+          <e p="DistanceFade.shader" t="Include" />
+        </e>
+        <e p="043_SphereTracingBasics" t="Include">
+          <e p="SphereTracingBasics.shader" t="Include" />
+        </e>
+        <e p="044_SphereTracingShading" t="Include">
+          <e p="SphereTracingShading.shader" t="Include" />
+        </e>
+        <e p="045_SphereTracingDepth" t="Include">
+          <e p="RenderDepthTexture.cs" t="Include" />
+          <e p="SphereTracingDepth.shader" t="Include" />
+        </e>
+        <e p="999_SDF_2D_AmbientOcclusion" t="Include">
+          <e p="2D_SDF.cginc" t="Include" />
+          <e p="2D_SDF_Ambient.shader" t="Include" />
+        </e>
+        <e p="Assets" t="Include">
+          <e p="Models" t="Include">
+            <e p="FightingUnityChan_FreeAsset" t="Include">
+              <e p="FightingUnityChan_FreeAsset" t="Include">
+                <e p="Models" t="Include">
+                  <e p="UnityChanShader" t="Include">
+                    <e p="Shader" t="Include">
+                      <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+                      <e p="Unitychan_chara_eye.shader" t="Include" />
+                      <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+                      <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+                      <e p="Unitychan_chara_fuku.shader" t="Include" />
+                      <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+                      <e p="Unitychan_chara_hada.shader" t="Include" />
+                      <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+                      <e p="Unitychan_chara_hair.shader" t="Include" />
+                      <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="CameraController.cs" t="Include" />
+                  <e p="IdleChanger.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Yurowm" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="Catlike Coding" t="Include">
+              <e p="Catlike Coding Readme.txt" t="Include" />
+              <e p="SDF Toolkit" t="Include">
+                <e p="Documentation" t="Include">
+                  <e p="SDF Toolkit Readme.txt" t="Include" />
+                </e>
+                <e p="SDFTextureGenerator.cs" t="Include" />
+                <e p="UIMaterialLink.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Catlike Coding" t="Include">
+                <e p="SDF Toolkit" t="Include">
+                  <e p="SDFTextureGeneratorWindow.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Rotator.cs" t="Include" />
+            <e p="SineWobble.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Breakdowns" t="Include">
+          <e p="Retrowave" t="Include">
+            <e p="HdrUnlit.shader" t="Include" />
+            <e p="ModuloMove.cs" t="Include" />
+            <e p="Random.cginc" t="Include" />
+            <e p="Retrowave.shader" t="Include" />
+          </e>
+        </e>
+        <e p="StructuredBufferSetup.cs" t="Include" />
+        <e p="testing" t="Include">
+          <e p="AfterImage" t="Include">
+            <e p="AfterImage.shader" t="Include" />
+            <e p="AfterImageCaster.cs" t="Include" />
+            <e p="AfterImageCatcher.cs" t="Include" />
+            <e p="AfterImageSurface.shader" t="Include" />
+            <e p="DrawCaster.shader" t="Include" />
+            <e p="Fade.shader" t="Include" />
+            <e p="OnlyDepth.shader" t="Include" />
+          </e>
+          <e p="Inertia_Fur" t="Include">
+            <e p="IntertFur.shader" t="Include" />
+          </e>
+          <e p="Matrix" t="Include">
+            <e p="Editor" t="Include">
+              <e p="FontAtlasGeneratorEditorWindow.cs" t="Include" />
+            </e>
+            <e p="FontAtlasMesh.cs" t="Include" />
+            <e p="IntVector2.cs" t="Include" />
+            <e p="Matrix.shader" t="Include" />
+          </e>
+          <e p="Metaballs" t="Include">
+            <e p="ColorMetaballs.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="ColorMetaballsEditor.cs" t="Include" />
+            </e>
+            <e p="Metaballs.shader" t="Include" />
+          </e>
+          <e p="PlaneIntersection.shader" t="Include" />
+          <e p="QuadUV" t="Include">
+            <e p="QuadUV.shader" t="Include" />
+          </e>
+          <e p="RollingWorld" t="Include">
+            <e p="Roll.shader" t="Include" />
+          </e>
+          <e p="Tea" t="Include">
+            <e p="Tea.cs" t="Include" />
+            <e p="Tea.shader" t="Include" />
+            <e p="triplanar.shader" t="Include" />
+          </e>
+          <e p="Terrain" t="Include">
+            <e p="Splats" t="Include">
+              <e p="AddPass.shader" t="Include" />
+              <e p="DiffuseBase.shader" t="Include" />
+              <e p="DiffuseBaseGen.shader" t="Include" />
+              <e p="FirstPass.shader" t="Include" />
+              <e p="Specular-AddPass.shader" t="Include" />
+              <e p="Specular-Base.shader" t="Include" />
+              <e p="Specular-FirstPass.shader" t="Include" />
+              <e p="Standard-AddPass.shader" t="Include" />
+              <e p="Standard-Base.shader" t="Include" />
+              <e p="Standard-BaseGen.shader" t="Include" />
+              <e p="Standard-FirstPass.shader" t="Include" />
+              <e p="Terrain-Utilities.shader" t="Include" />
+              <e p="Toon.shader" t="Include" />
+            </e>
+          </e>
+          <e p="TextureForge" t="Include">
+            <e p="2d_layered_rgb.shader" t="Include" />
+            <e p="Random.cginc" t="Include" />
+            <e p="Specs.shader" t="Include" />
+          </e>
+          <e p="Utility" t="Include">
+            <e p="Util.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="ShaderTutorials.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
