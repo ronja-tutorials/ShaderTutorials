@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Ronja2\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -197,8 +197,15 @@
           <e p="SphereTracingShading.shader" t="Include" />
         </e>
         <e p="045_SphereTracingDepth" t="Include">
-          <e p="RenderDepthTexture.cs" t="Include" />
           <e p="SphereTracingDepth.shader" t="Include" />
+        </e>
+        <e p="046_Partial_Derivatives" t="Include">
+          <e p="aa_smoothstep.shader" t="Include" />
+          <e p="aa_step.shader" t="Include" />
+          <e p="Fire.shader" t="Include" />
+          <e p="step.shader" t="Include" />
+          <e p="testing.shader" t="Include" />
+          <e p="uv.shader" t="Include" />
         </e>
         <e p="999_SDF_2D_AmbientOcclusion" t="Include">
           <e p="2D_SDF.cginc" t="Include" />
@@ -307,25 +314,7 @@
             <e p="Tea.shader" t="Include" />
             <e p="triplanar.shader" t="Include" />
           </e>
-          <e p="Terrain" t="Include">
-            <e p="Splats" t="Include">
-              <e p="AddPass.shader" t="Include" />
-              <e p="DiffuseBase.shader" t="Include" />
-              <e p="DiffuseBaseGen.shader" t="Include" />
-              <e p="FirstPass.shader" t="Include" />
-              <e p="Specular-AddPass.shader" t="Include" />
-              <e p="Specular-Base.shader" t="Include" />
-              <e p="Specular-FirstPass.shader" t="Include" />
-              <e p="Standard-AddPass.shader" t="Include" />
-              <e p="Standard-Base.shader" t="Include" />
-              <e p="Standard-BaseGen.shader" t="Include" />
-              <e p="Standard-FirstPass.shader" t="Include" />
-              <e p="Terrain-Utilities.shader" t="Include" />
-              <e p="Toon.shader" t="Include" />
-            </e>
-          </e>
           <e p="TextureForge" t="Include">
-            <e p="2d_layered_rgb.shader" t="Include" />
             <e p="Random.cginc" t="Include" />
             <e p="Specs.shader" t="Include" />
           </e>
