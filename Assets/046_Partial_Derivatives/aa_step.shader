@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/046_Partial_Derivatives/uv"{
+﻿Shader "Tutorial/046_Partial_Derivatives/aaStep"{
 	//show values to edit in inspector
 	Properties{
 	
@@ -61,8 +61,6 @@
 				fixed4 col = float4(stepped.xxx, 1);
 				return col;
 			}
-			
-			
 
 			ENDCG
 		}

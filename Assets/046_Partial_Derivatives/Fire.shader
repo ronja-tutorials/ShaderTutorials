@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/046_Partial_Derivatives/uv"{
+﻿Shader "Tutorial/046_Partial_Derivatives/fire"{
 	//show values to edit in inspector
 	Properties{
 	    _MainTex ("Fire Noise", 2D) = "white" {}

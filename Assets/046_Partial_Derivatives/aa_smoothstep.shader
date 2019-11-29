@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/046_Partial_Derivatives/uv"{
+﻿Shader "Tutorial/046_Partial_Derivatives/aaSmoothstep"{
 	//show values to edit in inspector
 	Properties{
 		_Color ("Tint", Color) = (0, 0, 0, 1)
