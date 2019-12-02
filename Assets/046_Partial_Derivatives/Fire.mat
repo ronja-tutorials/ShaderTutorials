@@ -60,6 +60,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Edge1: 0.209
+    - _Edge2: 0.485
+    - _Edge3: 0.75
     - _Factor: 36.5
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -68,6 +71,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ScrollSpeed: 0.64
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -75,9 +79,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 0, g: 0, b: 0, a: 1}
-    - _Color2: {r: 0, g: 0, b: 0, a: 1}
-    - _Color3: {r: 0, g: 0, b: 0, a: 1}
+    - _Color1: {r: 0.90588236, g: 0.16156864, b: 0.04705884, a: 1}
+    - _Color2: {r: 0.90588236, g: 0.38115, b: 0.0063411486, a: 1}
+    - _Color3: {r: 1, g: 0.77815, b: 0.21699995, a: 1}
     - _Edge1: {r: 0, g: 0, b: 0, a: 1}
     - _Edge2: {r: 0, g: 0, b: 0, a: 1}
     - _Edge3: {r: 0, g: 0, b: 0, a: 1}
