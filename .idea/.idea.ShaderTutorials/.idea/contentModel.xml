@@ -207,6 +207,12 @@
           <e p="testing.shader" t="Include" />
           <e p="uv.shader" t="Include" />
         </e>
+        <e p="047_InverseInterpolationAndRemap" t="Include">
+          <e p="interpolation.cginc" t="Include" />
+          <e p="InvLerp.shader" t="Include" />
+          <e p="Lerp.shader" t="Include" />
+          <e p="Remap.shader" t="Include" />
+        </e>
         <e p="999_SDF_2D_AmbientOcclusion" t="Include">
           <e p="2D_SDF.cginc" t="Include" />
           <e p="2D_SDF_Ambient.shader" t="Include" />
