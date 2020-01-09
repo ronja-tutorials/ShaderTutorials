@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/047_InvLerp_Remap/InvLerp"{
+﻿Shader "Tutorial/047_InvLerp_Remap/Remap"{
 	//show values to edit in inspector
 	Properties{
 		_SrcZeroValue ("Src 0 Value", Color) = (0,0,0,1) //source min value
