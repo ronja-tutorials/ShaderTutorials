@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Remap
+  m_Shader: {fileID: 4800000, guid: 83609788ad7055246888c27ed5408b0f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _SrcOneValue: 1
+    - _SrcZeroValue: 0
+    - _TargetOneValue: 1
+    - _TargetZeroValue: 0
+    m_Colors:
+    - _SrcOneValue: {r: 0.75, g: 1, b: 0.95450884, a: 1}
+    - _SrcZeroValue: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    - _TargetOneValue: {r: 1, g: 0.89130855, b: 0.5707547, a: 1}
+    - _TargetZeroValue: {r: 0, g: 0.042385913, b: 0.46226418, a: 1}
