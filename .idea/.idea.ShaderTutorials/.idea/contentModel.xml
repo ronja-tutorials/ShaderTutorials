@@ -213,6 +213,11 @@
           <e p="Lerp.shader" t="Include" />
           <e p="Remap.shader" t="Include" />
         </e>
+        <e p="048_Instancing" t="Include">
+          <e p="ColorPropertySetter.cs" t="Include" />
+          <e p="MPBShader.shader" t="Include" />
+          <e p="RandomColorPropertySetter.cs" t="Include" />
+        </e>
         <e p="999_SDF_2D_AmbientOcclusion" t="Include">
           <e p="2D_SDF.cginc" t="Include" />
           <e p="2D_SDF_Ambient.shader" t="Include" />
