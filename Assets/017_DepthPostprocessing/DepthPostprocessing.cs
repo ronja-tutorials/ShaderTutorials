@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 //behaviour which should lie on the same gameobject as the main camera
 public class DepthPostprocessing : MonoBehaviour {
 	//material that's applied when doing postprocessing
-	[SerializeField]
-	private Material postprocessMaterial;
-	[SerializeField]
-	private float waveSpeed;
-	[SerializeField]
-	private bool waveActive;
+	[FormerlySerializedAs("postprocessMaterial"), SerializeField]
+	public Material PostprocessMaterial;
+	[FormerlySerializedAs("waveSpeed"), SerializeField]
+	public float WaveSpeed;
+	[FormerlySerializedAs("waveActive"), SerializeField]
+	public bool WaveActive;
 	
 	private float waveDistance;
 
@@ -20,8 +21,8 @@ public class DepthPostprocessing : MonoBehaviour {
 
 	private void Update(){
 		//if the wave is active, make it move away, otherwise reset it
-		if(waveActive){
-			waveDistance = waveDistance + waveSpeed * Time.deltaTime;
+		if(WaveActive){
+			waveDistance = waveDistance + WaveSpeed * Time.deltaTime;
 		} else {
 			waveDistance = 0;
 		}
@@ -30,8 +31,8 @@ public class DepthPostprocessing : MonoBehaviour {
 	//method which is automatically called by unity after the camera is done rendering
 	private void OnRenderImage(RenderTexture source, RenderTexture destination){
 		//sync the distance from the script to the shader
-		postprocessMaterial.SetFloat("_WaveDistance", waveDistance);
+		PostprocessMaterial.SetFloat("_WaveDistance", waveDistance);
 		//draws the pixels from the source texture to the destination texture
-		Graphics.Blit(source, destination, postprocessMaterial);
+		Graphics.Blit(source, destination, PostprocessMaterial);
 	}
 }

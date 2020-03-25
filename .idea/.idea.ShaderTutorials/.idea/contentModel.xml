@@ -284,7 +284,6 @@
             <e p="Retrowave.shader" t="Include" />
           </e>
         </e>
-        <e p="StructuredBufferSetup.cs" t="Include" />
         <e p="testing" t="Include">
           <e p="AfterImage" t="Include">
             <e p="AfterImage.shader" t="Include" />
@@ -294,9 +293,6 @@
             <e p="DrawCaster.shader" t="Include" />
             <e p="Fade.shader" t="Include" />
             <e p="OnlyDepth.shader" t="Include" />
-          </e>
-          <e p="Inertia_Fur" t="Include">
-            <e p="IntertFur.shader" t="Include" />
           </e>
           <e p="Matrix" t="Include">
             <e p="Editor" t="Include">
@@ -313,17 +309,8 @@
             </e>
             <e p="Metaballs.shader" t="Include" />
           </e>
-          <e p="PlaneIntersection.shader" t="Include" />
           <e p="QuadUV" t="Include">
             <e p="QuadUV.shader" t="Include" />
-          </e>
-          <e p="RollingWorld" t="Include">
-            <e p="Roll.shader" t="Include" />
-          </e>
-          <e p="Tea" t="Include">
-            <e p="Tea.cs" t="Include" />
-            <e p="Tea.shader" t="Include" />
-            <e p="triplanar.shader" t="Include" />
           </e>
           <e p="TextureForge" t="Include">
             <e p="Random.cginc" t="Include" />

@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 //behaviour which should lie on the same gameobject as the main camera
 public class NormalPostprocessing : MonoBehaviour {
 	//material that's applied when doing postprocessing
-	[SerializeField]
-	private Material postprocessMaterial;
+	[FormerlySerializedAs("postprocessMaterial"), SerializeField]
+	public Material PostprocessMaterial;
 
 	private Camera cam;
 
@@ -18,9 +19,9 @@ public class NormalPostprocessing : MonoBehaviour {
 	private void OnRenderImage(RenderTexture source, RenderTexture destination){
 		//get viewspace to worldspace matrix and pass it to shader
 		Matrix4x4 viewToWorld = cam.cameraToWorldMatrix;
-		postprocessMaterial.SetMatrix("_viewToWorld", viewToWorld);
+		PostprocessMaterial.SetMatrix("_viewToWorld", viewToWorld);
 		//draws the pixels from the source texture to the destination texture
-		Graphics.Blit(source, destination, postprocessMaterial);
+		Graphics.Blit(source, destination, PostprocessMaterial);
 	}
 }
 
