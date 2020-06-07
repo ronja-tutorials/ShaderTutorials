@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/004_Textures"{
+﻿Shader "Tutorial/001-004_Basic_Unlit"{
 	//show values to edit in inspector
 	Properties{
 		_Color ("Tint", Color) = (0, 0, 0, 1)
@@ -7,7 +7,7 @@
 
 	SubShader{
 		//the material is completely non-transparent and is rendered at the same time as the other opaque geometry
-		Tags{ "RenderType"="Opaque" "Queue"="Geometry"}
+		Tags{ "RenderType"="Opaque" "Queue"="Geometry" }
 
 		Pass{
 			CGPROGRAM
@@ -15,7 +15,7 @@
 			//include useful shader functions
 			#include "UnityCG.cginc"
 
-			//define vertex and fragment shader
+			//define vertex and fragment shader functions
 			#pragma vertex vert
 			#pragma fragment frag
 
@@ -26,35 +26,40 @@
 			//tint of the texture
 			fixed4 _Color;
 
-			//the object data that's put into the vertex shader
+			//the mesh data thats read by the vertex shader
 			struct appdata{
 				float4 vertex : POSITION;
 				float2 uv : TEXCOORD0;
 			};
 
-			//the data that's used to generate fragments and can be read by the fragment shader
-			struct v2f{
+			//the data thats passed from the vertex to the fragment shader and interpolated by the rasterizer
+			struct v2f {
 				float4 position : SV_POSITION;
 				float2 uv : TEXCOORD0;
 			};
 
-			//the vertex shader
+			//the vertex shader function
 			v2f vert(appdata v){
 				v2f o;
-				//convert the vertex positions from object space to clip space so they can be rendered
+				//convert the vertex positions from object space to clip space so they can be rendered correctly
 				o.position = UnityObjectToClipPos(v.vertex);
+				//apply the texture transforms to the UV coordinates and pass them to the v2f struct
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				return o;
 			}
 
-			//the fragment shader
-			fixed4 frag(v2f i) : SV_TARGET{
-				fixed4 col = tex2D(_MainTex, i.uv);
+			//the fragment shader function
+			fixed3 frag(v2f i) : SV_TARGET{
+			    //read the texture color at the uv coordinate
+				fixed3 col = tex2D(_MainTex, i.uv);
+				//multiply the texture color and tint color
 				col *= _Color;
+				//return the final color to be drawn on screen
 				return col;
 			}
-
+			
 			ENDCG
 		}
 	}
+	Fallback "VertexLit"
 }

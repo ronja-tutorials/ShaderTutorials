@@ -7,14 +7,8 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="002_basic" t="Include">
-          <e p="basic_color.shader" t="Include" />
-        </e>
-        <e p="003_Properties" t="Include">
-          <e p="properties.shader" t="Include" />
-        </e>
-        <e p="004_Textures" t="Include">
-          <e p="textures.shader" t="Include" />
+        <e p="001-004_basic_unlit" t="Include">
+          <e p="basic_unlit.shader" t="Include" />
         </e>
         <e p="005_Surface_Basics" t="Include">
           <e p="simple_surface.shader" t="Include" />
@@ -274,14 +268,6 @@
           <e p="Scripts" t="Include">
             <e p="Rotator.cs" t="Include" />
             <e p="SineWobble.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Breakdowns" t="Include">
-          <e p="Retrowave" t="Include">
-            <e p="HdrUnlit.shader" t="Include" />
-            <e p="ModuloMove.cs" t="Include" />
-            <e p="Random.cginc" t="Include" />
-            <e p="Retrowave.shader" t="Include" />
           </e>
         </e>
         <e p="testing" t="Include">

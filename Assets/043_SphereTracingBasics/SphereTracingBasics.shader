@@ -76,8 +76,8 @@
                     //go forwards
                     progress = progress + distance;
                 }
-                //discard pixel if no shape was hit
-                clip(-1);
+                //discard pixel if no shape was hit (previously used clip(-1), discard is better!!)
+                discard;
                 return 0;
 			}
 

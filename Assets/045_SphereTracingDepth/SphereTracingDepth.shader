@@ -112,8 +112,9 @@
                     //go forwards
                     progress = progress + distance;
                 }
-                //discard pixel if no shape was hit
-                clip(hitsurface ? 1 : -1);
+                //discard pixel if no shape was hit (previously used clip(-1), discard is better!!)
+                if(hitsurface)
+                    discard;
                 
                 //calculate surface color
                 color = renderSurface(samplePoint);
