@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Ronja2\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Ronja2\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ShaderTutorials.-1481509537.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Ronja2\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Ronja2\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_ShaderTutorials.-1481509537.00" t="ExcludeRecursive" />
     <e p="D:\gamedev\ShaderTutorials" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -202,7 +202,7 @@
           <e p="uv.shader" t="Include" />
         </e>
         <e p="047_InverseInterpolationAndRemap" t="Include">
-          <e p="interpolation.cginc" t="Include" />
+          <e p="Interpolation.cginc" t="Include" />
           <e p="InvLerp.shader" t="Include" />
           <e p="Lerp.shader" t="Include" />
           <e p="Remap.shader" t="Include" />
@@ -212,11 +212,19 @@
           <e p="MPBShader.shader" t="Include" />
           <e p="RandomColorPropertySetter.cs" t="Include" />
         </e>
+        <e p="049_Sprite_Outline" t="Include">
+          <e p="SpriteOutline.shader" t="Include" />
+        </e>
         <e p="999_SDF_2D_AmbientOcclusion" t="Include">
           <e p="2D_SDF.cginc" t="Include" />
           <e p="2D_SDF_Ambient.shader" t="Include" />
         </e>
         <e p="Assets" t="Include">
+          <e p="Images" t="Include">
+            <e p="Female" t="Include">
+              <e p="Credits.txt" t="Include" />
+            </e>
+          </e>
           <e p="Models" t="Include">
             <e p="FightingUnityChan_FreeAsset" t="Include">
               <e p="FightingUnityChan_FreeAsset" t="Include">
@@ -308,7 +316,7 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
-      <e p="Packages" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
       <e p="ShaderTutorials.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
