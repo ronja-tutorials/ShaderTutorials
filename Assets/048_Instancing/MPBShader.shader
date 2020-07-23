@@ -42,9 +42,11 @@
 				//setup instance id
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_TRANSFER_INSTANCE_ID(v, o);
+                
+                float4 color =  UNITY_ACCESS_INSTANCED_PROP(Props, _Color);
 				
 				//calculate the position in clip space to render the object
-				o.position = UnityObjectToClipPos(v.vertex);
+				o.position = UnityObjectToClipPos(v.vertex + color);
 				return o;
 			}
 
