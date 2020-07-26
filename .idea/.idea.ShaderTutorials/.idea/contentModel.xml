@@ -215,6 +215,11 @@
         <e p="049_Sprite_Outline" t="Include">
           <e p="SpriteOutline.shader" t="Include" />
         </e>
+        <e p="050_Compute_Shader" t="Include">
+          <e p="BasicCompute.compute" t="Include" />
+          <e p="BasicComputeSpheres.cs" t="Include" />
+          <e p="Random.cginc" t="Include" />
+        </e>
         <e p="999_SDF_2D_AmbientOcclusion" t="Include">
           <e p="2D_SDF.cginc" t="Include" />
           <e p="2D_SDF_Ambient.shader" t="Include" />
