@@ -12,6 +12,7 @@ public class BasicComputeSpheres : MonoBehaviour
     
     ComputeBuffer resultBuffer;
     int kernel;
+    uint threadGroupSize;
     Vector3[] output;
 
     Transform[] instances;
@@ -20,6 +21,7 @@ public class BasicComputeSpheres : MonoBehaviour
     {
         //program we're executing
         kernel = Shader.FindKernel("Spheres");
+        Shader.GetKernelThreadGroupSizes(kernel, out threadGroupSize, out _, out _);
         
         //buffer on the gpu in the ram
         resultBuffer = new ComputeBuffer(SphereAmount, sizeof(float) * 3);
@@ -37,7 +39,8 @@ public class BasicComputeSpheres : MonoBehaviour
     {
         Shader.SetFloat("Time", Time.time);
         Shader.SetBuffer(kernel, "Result", resultBuffer);
-        Shader.Dispatch(kernel, SphereAmount, 1, 1);
+        int threadGroups = (int) ((SphereAmount + (threadGroupSize - 1)) / threadGroupSize);
+        Shader.Dispatch(kernel, threadGroups, 1, 1);
         resultBuffer.GetData(output);
 
         for (int i = 0; i < instances.Length; i++)
