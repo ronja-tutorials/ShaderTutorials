@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/029_material_baking/layered_repeating_perlin" {
+﻿Shader "Tutorial/029_tiling_noise/layered_repeating_perlin" {
 	Properties {
 		_CellAmount ("Cell Amount", Range(1, 32)) = 2
 		_Period ("Repeat every X cells", Vector) = (4, 4, 0, 0)

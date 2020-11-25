@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528389a49f0e4824db18c4fb0b891336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SphereAmount: 10000
+  SphereAmount: 1000000
   Shader: {fileID: 7200000, guid: caa1df8ce921862478b690278dce0fde, type: 3}
   Mesh: {fileID: 4300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
   Material: {fileID: 2100000, guid: 6105c968921a5cd49971c28b3ceb5392, type: 2}

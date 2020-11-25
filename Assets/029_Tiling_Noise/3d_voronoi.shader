@@ -1,4 +1,4 @@
-﻿Shader "Tutorial/029_material_baking/repeating_3d_voronoi" {
+﻿Shader "Tutorial/029_tiling_noise/repeating_3d_voronoi" {
 	Properties {
 		_Height ("Z coordinate (height)", Range(0, 1)) = 0
 		_CellAmount ("Cell Amount", Range(1, 32)) = 2
