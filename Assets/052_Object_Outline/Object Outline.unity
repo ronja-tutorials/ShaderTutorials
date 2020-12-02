@@ -279,7 +279,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -311,7 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7657476453bb6f948b7624d4fd62793f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WriteObject: {fileID: 2100000, guid: e0202169a9624e345b65871f0711cdec, type: 2}
+  OutlinedObject: {fileID: 0}
+  WriteObject: {fileID: 2100000, guid: 7875a438226e6a948a043bf4472bcec8, type: 2}
   ApplyOutline: {fileID: 2100000, guid: e0202169a9624e345b65871f0711cdec, type: 2}
 --- !u!1 &1656241872
 GameObject:
