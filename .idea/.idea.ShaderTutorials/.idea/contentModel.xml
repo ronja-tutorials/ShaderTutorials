@@ -226,6 +226,10 @@
           <e p="ProceduralSpheres.shader" t="Include" />
           <e p="Random.cginc" t="Include" />
         </e>
+        <e p="052_Object_Outline" t="Include">
+          <e p="ApplyOutline.shader" t="Include" />
+          <e p="ObjectOutline.cs" t="Include" />
+        </e>
         <e p="999_SDF_2D_AmbientOcclusion" t="Include">
           <e p="2D_SDF.cginc" t="Include" />
           <e p="2D_SDF_Ambient.shader" t="Include" />
