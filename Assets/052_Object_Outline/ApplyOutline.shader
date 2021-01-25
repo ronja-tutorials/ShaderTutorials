@@ -65,10 +65,10 @@
                 float maxAlpha = 0;
                 for(uint index = 0; index<8; index++){
                   float2 sampleUV = i.uv + directions[index] * sampleDistance;
-                  maxAlpha = max(maxAlpha, tex2D(_SelectionBuffer, sampleUV).a);
+                  maxAlpha = max(maxAlpha, tex2D(_SelectionBuffer, sampleUV).r);
                 }
                 //remove core
-                float border = max(0, maxAlpha - tex2D(_SelectionBuffer, i.uv).a);
+                float border = max(0, maxAlpha - tex2D(_SelectionBuffer, i.uv).r);
                 
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
