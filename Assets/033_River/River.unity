@@ -43,19 +43,18 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
-    m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -63,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -77,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -88,9 +94,12 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 1a40c121fbe518d42ab93f62b67d4480,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -110,16 +119,22 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &14574399
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -176,25 +191,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -379.286
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (11)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &14574400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 14574399}
+  m_PrefabInstance: {fileID: 14574399}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &119208176
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.458
@@ -251,29 +266,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 175.746
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &119208177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 119208176}
+  m_PrefabInstance: {fileID: 119208176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &171094576
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.874
@@ -330,30 +345,31 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 182.131
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &171094577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 171094576}
+  m_PrefabInstance: {fileID: 171094576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &231857018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1564910425}
+  m_PrefabInstance: {fileID: 1564910425}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &538271343
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9380002
@@ -410,25 +426,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -419.894
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (15)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &538271344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 538271343}
+  m_PrefabInstance: {fileID: 538271343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &615450391
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.821
@@ -485,25 +501,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 7.349991
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &615450392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 615450391}
+  m_PrefabInstance: {fileID: 615450391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &694914688
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4100003
@@ -560,25 +576,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -59.714005
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &694914689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 694914688}
+  m_PrefabInstance: {fileID: 694914688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &720799991
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.137
@@ -635,23 +651,20 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -449.225
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &720799992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 720799991}
+  m_PrefabInstance: {fileID: 720799991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &723392238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723392240}
@@ -667,15 +680,18 @@ GameObject:
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723392238}
   m_Enabled: 1
-  serializedVersion: 8
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.97580147, b: 0.944, a: 1}
   m_Intensity: 1.79
   m_Range: 10
   m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -685,6 +701,24 @@ Light:
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -692,19 +726,23 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &723392240
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723392238}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 4.564, z: 0}
@@ -714,12 +752,16 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &753699818
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.725
@@ -776,25 +818,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 184.1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (14)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &753699819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 753699818}
+  m_PrefabInstance: {fileID: 753699818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &814577386
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
+      propertyPath: m_Name
+      value: River
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -831,20 +873,19 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f0861786a2062fe4888e24f0f20a619b, type: 2}
-    - target: {fileID: 100000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
-      propertyPath: m_Name
-      value: River
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!1001 &869087512
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.34
@@ -901,29 +942,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.904999
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &869087513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 869087512}
+  m_PrefabInstance: {fileID: 869087512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &980888868
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.92
@@ -980,25 +1021,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 455.399
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &980888869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 980888868}
+  m_PrefabInstance: {fileID: 980888868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1042011946
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.330023
@@ -1055,29 +1096,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -267.518
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1042011947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1042011946}
+  m_PrefabInstance: {fileID: 1042011946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1051459010
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.230022
@@ -1134,29 +1175,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -187.646
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1051459011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1051459010}
+  m_PrefabInstance: {fileID: 1051459010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1063352087
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.99
@@ -1213,29 +1254,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -339.699
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1063352088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1063352087}
+  m_PrefabInstance: {fileID: 1063352087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1068375729
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1499999
@@ -1292,20 +1333,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 73.024994
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1068375730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1068375729}
+  m_PrefabInstance: {fileID: 1068375729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1088095730
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -1369,19 +1406,23 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1088095731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1088095730}
+  m_PrefabInstance: {fileID: 1088095730}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1218779925
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.886
@@ -1438,25 +1479,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 202.637
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1218779926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1218779925}
+  m_PrefabInstance: {fileID: 1218779925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1230703638
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.36
@@ -1513,29 +1554,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 263.717
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1230703639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1230703638}
+  m_PrefabInstance: {fileID: 1230703638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1276795798
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7759699
@@ -1592,25 +1633,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -938.171
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1276795799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1276795798}
+  m_PrefabInstance: {fileID: 1276795798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1327914134
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.02
@@ -1667,25 +1708,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -404.58398
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1327914135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1327914134}
+  m_PrefabInstance: {fileID: 1327914134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1403441376
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.854
@@ -1742,25 +1783,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -325.328
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1403441377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1403441376}
+  m_PrefabInstance: {fileID: 1403441376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1426652100
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.632022
@@ -1817,27 +1858,24 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -187.646
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1426652101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1426652100}
+  m_PrefabInstance: {fileID: 1426652100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1540759555
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1540759558}
@@ -1854,20 +1892,24 @@ GameObject:
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540759555}
   m_Enabled: 1
 --- !u!20 &1540759557
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540759555}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -1901,22 +1943,27 @@ Camera:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540759555}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.21237381, y: -0.7770168, z: 0.34002733, w: 0.48530784}
+  m_LocalPosition: {x: 5.6184783, y: 5.5801697, z: 1.5473127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1564910425
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.771417
@@ -1973,22 +2020,18 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 81.502
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!1 &1584696366
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584696367}
@@ -2003,7 +2046,8 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584696366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2030,12 +2074,16 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1605617634
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.02
@@ -2092,23 +2140,20 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 171.743
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1605617635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1605617634}
+  m_PrefabInstance: {fileID: 1605617634}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1606383814
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606383815}
@@ -2123,7 +2168,8 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606383814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.272022, y: -13.354523, z: -43.880116}
@@ -2146,12 +2192,16 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1620795850
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.128
@@ -2208,29 +2258,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 172.404
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1620795851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1620795850}
+  m_PrefabInstance: {fileID: 1620795850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1634070832
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.648
@@ -2287,29 +2337,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -31.963013
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1634070833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1634070832}
+  m_PrefabInstance: {fileID: 1634070832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1649243224
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.167023
@@ -2366,29 +2416,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -187.646
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1649243225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1649243224}
+  m_PrefabInstance: {fileID: 1649243224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1799081637
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.02
@@ -2445,25 +2495,25 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -404.58398
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1799081638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1799081637}
+  m_PrefabInstance: {fileID: 1799081637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1856394654
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.945023
@@ -2520,29 +2570,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -187.646
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1856394655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1856394654}
+  m_PrefabInstance: {fileID: 1856394654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1888057174
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1606383815}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.282022
@@ -2599,29 +2649,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -187.646
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &1888057175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 1888057174}
+  m_PrefabInstance: {fileID: 1888057174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1973461765
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
+      propertyPath: m_Name
+      value: RiverBed
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2658,20 +2708,19 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d2a7b3299166374c9e144b2c32356d5, type: 2}
-    - target: {fileID: 100000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
-      propertyPath: m_Name
-      value: RiverBed
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9ae1e059d8396b46a45fadabe848ae8, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!1001 &2005762747
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1584696367}
     m_Modifications:
+    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
+      propertyPath: m_Name
+      value: Icosphere1 (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.154
@@ -2728,15 +2777,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -248.898
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-      propertyPath: m_Name
-      value: Icosphere1 (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597213ff5ad2d24f859bfe7547a0db9, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!4 &2005762748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5597213ff5ad2d24f859bfe7547a0db9,
     type: 3}
-  m_PrefabInternal: {fileID: 2005762747}
+  m_PrefabInstance: {fileID: 2005762747}
+  m_PrefabAsset: {fileID: 0}

@@ -9,12 +9,8 @@
 		Tags{ "RenderType"="Opaque" "Queue"="Geometry" "DisableBatching"="True"}
 
 		Pass{
-            ZWrite Off
-
 			CGPROGRAM
 			#include "UnityCG.cginc"
-
-            
 
 			#pragma vertex vert
 			#pragma fragment frag
@@ -58,27 +54,27 @@
             }
 
 			fixed4 frag(v2f i) : SV_TARGET{
-                //ray information
+        //ray information
 				float3 pos = i.localPosition;
-                float3 dir = normalize(i.viewDirection.xyz);
-                float progress = 0;
-                
-                //tracing loop
-                for (uint iter = 0; iter < MAX_STEPS; iter++) {
-                    //get current location on ray
-                    float3 samplePoint = pos + dir * progress;
-                    //get distance to closest shape
-                    float distance = scene(samplePoint);
-                    //return color if inside shape
-                    if(distance < THICKNESS){
-                        return _Color;
-                    }
-                    //go forwards
-                    progress = progress + distance;
-                }
-                //discard pixel if no shape was hit (previously used clip(-1), discard is better!!)
-                discard;
-                return 0;
+        float3 dir = normalize(i.viewDirection.xyz);
+        float progress = 0;
+        
+        //tracing loop
+        for (uint iter = 0; iter < MAX_STEPS; iter++) {
+            //get current location on ray
+            float3 samplePoint = pos + dir * progress;
+            //get distance to closest shape
+            float distance = scene(samplePoint);
+            //return color if inside shape
+            if(distance < THICKNESS){
+                return _Color;
+            }
+            //go forwards
+            progress = progress + distance;
+        }
+        //discard pixel if no shape was hit (previously used clip(-1), discard is better!!)
+        discard;
+        return 0;
 			}
 
 			ENDCG

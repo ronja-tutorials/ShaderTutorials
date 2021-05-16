@@ -21,7 +21,8 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _OneValue: 1
-    - _ZeroValue: 0
+    - _ZeroValue: 0.419
     m_Colors:
     - _OneValue: {r: 1, g: 1, b: 1, a: 1}
     - _ZeroValue: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

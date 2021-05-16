@@ -9,8 +9,6 @@
         Tags{ "RenderType"="Opaque" "Queue"="Geometry+1" "DisableBatching"="True" "IgnoreProjector"="True"}
 
         Pass{
-            ZWrite On
-
             CGPROGRAM
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
@@ -112,8 +110,8 @@
                     //go forwards
                     progress = progress + distance;
                 }
-                //discard pixel if no shape was hit (previously used clip(-1), discard is better!!)
-                if(hitsurface)
+                //discard pixel if no shape was hit (previously used clip(-1), discard is better!)
+                if(!hitsurface)
                     discard;
                 
                 //calculate surface color

@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[ExecuteAlways]
 public class ClippingPlane : MonoBehaviour {
-
 	//material we pass the values to
 	public Material mat;
 	
